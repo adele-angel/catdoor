@@ -1,0 +1,271 @@
+/* global styles */
+@import url("https://fonts.googleapis.com/css?family=Blinker|Pacifico&display=swap");
+
+#app {
+  background-image: linear-gradient(
+      10deg,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.05) 20%,
+      rgba(0, 0, 0, 0.05) 30%,
+      rgba(0, 0, 0, 0.08) 30%,
+      rgba(0, 0, 0, 0.08) 70%,
+      rgba(0, 0, 0, 0.05) 70%,
+      rgba(0, 0, 0, 0.05) 80%,
+      rgba(0, 0, 0, 0) 80%
+    ),
+    linear-gradient(
+      170deg,
+      rgba(172, 231, 241, 0.5) 30%,
+      rgba(26, 135, 155, 0.3) 30%,
+      rgba(229, 189, 143, 0.5) 80%
+    );
+}
+
+#top-navbar .brand-logo,
+.subheader {
+  font-family: "Blinker", sans-serif;
+}
+
+#top-navbar .brand-logo > img {
+  height: 1em;
+  margin-left: 10px;
+}
+
+#adele-angel {
+  display: none;
+}
+
+/* getting started */
+#getting-started h5 {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+#quotes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.quote {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.85rem;
+  justify-content: space-between;
+  width: 30%;
+  padding: 0.7rem;
+}
+
+.quote_text {
+  align-self: flex-start;
+  text-align: left;
+  font-style: italic;
+}
+
+.quote_name {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.video-controller {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+.video-controller span:first-child {
+  font-weight: bolder;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #getting-started h5 {
+    font-size: 2.9em;
+  }
+
+  #quotes {
+    margin-top: 1rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .video-controller {
+    margin-bottom: 2rem;
+  }
+
+  .player i {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+  }
+
+  .player i:hover {
+    cursor: pointer;
+    color: white;
+  }
+}
+
+/* add pets */
+#petList {
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  padding: 0 1rem;
+}
+
+.add-button {
+  margin-top: 1rem;
+}
+
+#petList .pet {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+#petList .pet-image:hover {
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+#petList img {
+  padding: 0.5rem;
+}
+
+#addPetModel h5 {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* label videos */
+#videoList {
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  padding: 1.5rem;
+}
+
+#videoList .video {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto 1rem;
+  padding: 0.75rem;
+}
+
+#videoList .video .video_preview {
+  width: 50%;
+  height: auto;
+}
+
+#videoList .video .video_slider img {
+  width: 15%;
+  height: auto;
+  margin: 0.2rem;
+}
+
+#videoList .video .video_slider img {
+  border: 1px solid white;
+}
+
+#videoList .video .video_slider img:hover {
+  border: 3px solid lightseagreen;
+}
+
+#labelVideosModel h5 {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* train classifier */
+#train-classifier {
+  padding: 1rem;
+}
+
+#train-classifier h5 {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#train-classifier .pet-showcase img {
+  width: 20%;
+  height: auto;
+}
+
+/* choose classifier */
+#choose-classifier {
+  padding: 1rem;
+}
+
+#choose-classifier h5 {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* event view */
+#event-view #datePicker {
+  background-color: rgba(0, 0, 0, 0.342);
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#event-view #datePicker i:hover {
+  color: white;
+}
+
+#event-view #eventList {
+  padding: 1.5rem;
+}
+
+#event-view #eventList img {
+  padding: 0.5rem 0;
+}
+
+#event-view .event {
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 0.5rem;
+}
+
+/* contact */
+#contactList {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+#contactList .contact {
+  background-color: rgba(255, 255, 255, 0.342);
+}
+
+#contactList .contact h6,
+#contactList .contact span {
+  font-family: "Blinker", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#contactList .person-info {
+  margin-bottom: 1rem;
+}

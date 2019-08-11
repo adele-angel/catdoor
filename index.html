@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>catDoor</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <!-- materialize icons, css & js -->
+    <link
+      type="text/css"
+      href="./src/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="./src/js/materialize.min.js"></script>
+    <link type="text/css" href="./src/css/styles.css" rel="stylesheet" />
+    <!-- manifest -->
+    <link rel="manifest" href="./manifest.json" />
+    <!-- browser fallback -->
+    <meta name="theme-color" content="#ffe1c4" />
+    <!-- IE -->
+    <meta
+      name="msapplication-TileImage"
+      content="./src/img/icons/icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#aa7700" />
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="catDoor" />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-57x57.png"
+      sizes="57x57"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-60x60.png"
+      sizes="60x60"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-72x72.png"
+      sizes="72x72"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-76x76.png"
+      sizes="76x76"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-114x114.png"
+      sizes="114x114"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-120x120.png"
+      sizes="120x120"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-128x128.png"
+      sizes="128x128"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-144x144.png"
+      sizes="144x144"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-152x152.png"
+      sizes="152x152"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-180x180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-384x384.png"
+      sizes="384x384"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./src/img/icons/icon-512x512.png"
+      sizes="512x512"
+    />
+  </head>
+  <body onresize="resizeViewHeight()" onload="resizeViewHeight()">
+    <div id="adele-angel">Created by Adele Angel, all rights reserved</div>
+    <div id="app">
+      <!-- top navigation -->
+      <div id="top-navbar" class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper grey darken-4">
+            <a href="#" class="brand-logo"
+              ><img class="responsive-img" src="./src/img/logo.svg" />
+              catDoor
+            </a>
+            <a href="#" data-target="nav-collapse" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Getting Started</a></li>
+              <li><a href="./src/pages/add.html">Add Your Cats</a></li>
+              <li><a href="./src/pages/label.html">Label Videos</a></li>
+              <li><a href="./src/pages/train.html">Train A Classifier</a></li>
+              <li><a href="./src/pages/choose.html">Choose A Classifier</a></li>
+              <li><a href="./src/pages/view.html">Event View</a></li>
+              <li><a href="./src/pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- side navigation -->
+      <ul id="nav-collapse" class="sidenav side-menu">
+        <li>
+          <a class="subheader">catDoor</a>
+        </li>
+        <li>
+          <a href="#getting-started" class="waves-effect"
+            ><i class="material-icons"> control_camera </i
+            ><span>Getting Started</span></a
+          >
+        </li>
+        <li>
+          <a href="#add-your-pets" class="waves-effect"
+            ><i class="material-icons">pets </i><span>Add Your Cats</span></a
+          >
+        </li>
+        <li>
+          <a href="#label-videos" class="waves-effect"
+            ><i class="material-icons"> collections </i
+            ><span>Label Videos</span></a
+          >
+        </li>
+        <li>
+          <a href="#train-classifier" class="waves-effect"
+            ><i class="material-icons"> fitness_center </i
+            ><span>Train A Classifier</span></a
+          >
+        </li>
+        <li>
+          <a href="#choose-classifier" class="waves-effect"
+            ><i class="material-icons"> touch_app </i
+            ><span>Choose A Classifier</span></a
+          >
+        </li>
+        <li>
+          <a href="#event-view" class="waves-effect"
+            ><i class="material-icons"> event </i><span>Event View</span></a
+          >
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+          <a href="#contact" class="waves-effect"
+            ><i class="material-icons">info </i><span>Contact</span></a
+          >
+        </li>
+      </ul>
+
+      <!-- main -->
+      <div id="main" class="carousel carousel-slider center">
+        <!-- getting started -->
+        <div id="getting-started" class="carousel-item">
+          <div class="container">
+            <h5>The Purrrfect Solution For All Your Cat Needs</h5>
+            <h6>
+              Connected. Happy cats. AI powered. Big data. Tons of cat videos.
+              Competing products are BORING!
+            </h6>
+          </div>
+          <div id="quotes">
+            <div class="quote card-panel teal lighten-5">
+              <span class="quote_text"
+                >"Thanks to catDoor App spying on your cat has never been
+                easier!"</span
+              >
+              <span class="quote_name teal-text text-darken-5">-John Doe</span>
+            </div>
+            <div class="quote card-panel teal lighten-5">
+              <span class="quote_text"
+                >"...Meow meow, meowwww, MEOW! purrr... "</span
+              >
+              <span class="quote_name teal-text text-darken-5">-Some cat</span>
+            </div>
+            <div class="quote card-panel teal lighten-5">
+              <span class="quote_text"
+                >"Can I use this app on my kids? ...asking for a friend"</span
+              >
+              <span class="quote_name teal-text text-darken-5">-Anonymous</span>
+            </div>
+          </div>
+          <!-- streamer -->
+          <div class="video-controller z-depth-2 container">
+            <span>LIVE STREAMING</span>
+            <div class="player">
+              <i
+                class="material-icons red-text text-darken-2"
+                onclick="cameraSwitch()"
+                >videocam </i
+              >&nbsp;
+              <span>Turn Off Camera</span>
+            </div>
+          </div>
+          <div class="container">
+            <video id="streamer" class="responsive-video" autoplay loop muted>
+              <source src="./src/video/getting_started.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <!-- add your pets -->
+        <div id="add-your-pets" class="carousel-item">
+          <div class="add-button row">
+            <a class="waves-effect waves-light btn"
+              ><i class="material-icons"> person </i></a
+            >
+            <!-- Modal Trigger -->
+            <a
+              class="waves-effect waves-light btn modal-trigger"
+              href="#addPetModel"
+              ><i class="material-icons right"> add </i>Add New Pet</a
+            >
+          </div>
+          <!-- pet container -->
+          <div id="petList">
+            <div class="pet row z-depth-1">
+              <div class="valign-wrapper">
+                <div class="col s4 valign-wrapper">
+                  <img
+                    src="./src/img/pets/grumpy.jpg"
+                    alt="Grumpy Cat"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="col s8 valign-wrapper">
+                  <div class="col s8 pet-name">Grumpy Cat</div>
+                  <div class="col s4">
+                    <span
+                      class="btn-floating btn-small waves-effect waves-light teal lighten-3"
+                      ><i class="material-icons">
+                        clear
+                      </i></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pet row z-depth-1">
+              <div class="valign-wrapper">
+                <div class="col s4 valign-wrapper">
+                  <img
+                    src="./src/img/pets/marina.jpg"
+                    alt="Marina"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="col s8 valign-wrapper">
+                  <div class="col s8 pet-name">Marina</div>
+                  <div class="col s4">
+                    <span
+                      class="btn-floating btn-small waves-effect waves-light teal lighten-3"
+                      ><i class="material-icons">
+                        clear
+                      </i></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pet row z-depth-1">
+              <div class="valign-wrapper">
+                <div class="col s4 valign-wrapper">
+                  <img
+                    src="./src/img/pets/christina.jpg"
+                    alt="Christina"
+                    class="responsive-img"
+                  />
+                </div>
+                <div class="col s8 valign-wrapper">
+                  <div class="col s8 pet-name">Christina</div>
+                  <div class="col s4">
+                    <span
+                      class="btn-floating btn-small waves-effect waves-light teal lighten-3"
+                      ><i class="material-icons">
+                        clear
+                      </i></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Structure -->
+          <div id="addPetModel" class="modal">
+            <div class="modal-content">
+              <h5 class="teal-text text-darken-4">Create A Pet Profile</h5>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    id="pet_name"
+                    type="text"
+                    class="validate"
+                    maxlength="20"
+                  />
+                  <label for="pet_name">Pet Name</label>
+                  <span
+                    class="helper-text"
+                    data-error="Please enter a name"
+                  ></span>
+                </div>
+              </div>
+              <!-- file upload -->
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span
+                    ><i class="material-icons left"> add_a_photo </i>File</span
+                  >
+                  <input type="file" id="pet_profile_img" />
+                </div>
+                <div class="file-path-wrapper">
+                  <input
+                    id="pet_profile_img_name"
+                    class="file-path validate"
+                    type="text"
+                  />
+                  <span
+                    class="helper-text"
+                    data-error="Please upload a file"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+                >Cancel</a
+              ><a
+                href="#!"
+                class="waves-effect waves-green btn-flat"
+                onclick="validatePetModal()"
+                >Save</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- label videos -->
+        <div id="label-videos" class="carousel-item">
+          <div id="videoList">
+            <div class="video col s12 z-depth-1">
+              <!-- Modal Trigger -->
+              <div class="row">
+                <a class="modal-trigger" href="#labelVideosModel"
+                  ><img
+                    class="video_preview z-depth-1"
+                    src="./src/img/events/event1.jpg"
+                    alt="event1"
+                /></a>
+              </div>
+              <div class="video_slider">
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/grumpy.jpg"
+                  alt="Grumpy Cat"
+                />
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/marina.jpg"
+                  alt="Marina"
+                />
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/christina.jpg"
+                  alt="Christina"
+                />
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/placeholder.png"
+                  alt="Empty"
+                />
+              </div>
+            </div>
+            <div class="video col s12 z-depth-1">
+              <!-- Modal Trigger -->
+              <div class="row">
+                <a class="modal-trigger" href="#labelVideosModel"
+                  ><img
+                    class="video_preview z-depth-1"
+                    src="./src/img/events/event2.jpg"
+                    alt="event2"
+                /></a>
+              </div>
+              <div class="video_slider">
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/grumpy.jpg"
+                  alt="Grumpy Cat"
+                />
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/marina.jpg"
+                  alt="Marina"
+                />
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/christina.jpg"
+                  alt="Christina"
+                />
+                <img
+                  class="responsive-img z-depth-1 hoverable"
+                  src="./src/img/pets/placeholder.png"
+                  alt="Empty"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Structure -->
+          <div id="labelVideosModel" class="modal">
+            <div class="modal-content">
+              <h5 class="teal-text text-darken-4">View Event</h5>
+              <div class="row">
+                <video class="responsive-video" controls autoplay muted>
+                  <source
+                    src="./src/video/getting_started.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+                >Close</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- train a classifier -->
+        <div id="train-classifier" class="carousel-item">
+          <h5>You have 120 labeled videos</h5>
+          <div class="container">
+            <div class="pet-showcase row">
+              <img
+                class="circle responsive-img z-depth-1 hoverable"
+                src="./src/img/pets/grumpy.jpg"
+                alt="Grumpy Cat"
+              />
+              <img
+                class="circle responsive-img z-depth-1 hoverable"
+                src="./src/img/pets/marina.jpg"
+                alt="Marina"
+              />
+              <img
+                class="circle responsive-img z-depth-1 hoverable"
+                src="./src/img/pets/christina.jpg"
+                alt="Christina"
+              />
+              <img
+                class="circle responsive-img z-depth-1 hoverable"
+                src="./src/img/pets/placeholder.png"
+                alt="Empty"
+              />
+            </div>
+            <div class="container left-align">
+              <ul class="classes collection z-depth-1">
+                <li class="collection-item">
+                  <strong>10</strong> videos of Marina
+                </li>
+                <li class="collection-item">
+                  <strong>40</strong> videos of Christina
+                </li>
+                <li class="collection-item">
+                  <strong>70</strong> videos of Grumpy Cat
+                </li>
+              </ul>
+            </div>
+
+            <div class="row">
+              Please make sure there are enough videos of each pet in different
+              lighting conditions
+            </div>
+            <div class="row">
+              <a class="waves-effect waves-light btn-large"
+                ><i class="material-icons left"> fitness_center </i>start
+                training</a
+              >
+            </div>
+            <span>You have 16 free training runs left this month</span>
+          </div>
+        </div>
+
+        <!-- choose a classifier -->
+        <div id="choose-classifier" class="carousel-item">
+          <div id="classifierList">
+            <div class="container">
+              <div class="classifiers collection z-depth-1">
+                <a href="#!" class="collection-item">Christina</a>
+                <a href="#!" class="collection-item active">Marina</a>
+                <a href="#!" class="collection-item">Grumpy Cat</a>
+                <a href="#!" class="collection-item">Empty</a>
+              </div>
+              <div class="col s12">
+                <div class="card-panel teal lighten-5 z-depth-1">
+                  <div class="row">
+                    <h5 class="teal-text text-darken-4">Class "Marina"</h5>
+                    <span>Is trained on <strong>10</strong> videos</span>
+                  </div>
+                </div>
+                <div class="card-panel teal lighten-4 z-depth-1">
+                  <strong class="teal-text text-darken-5">Accuracy:</strong> 96%
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <a class="waves-effect waves-light btn-small"
+                ><i class="material-icons left"> touch_app </i>Activate
+                Classifier</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- event view -->
+        <div id="event-view" class="carousel-item">
+          <div id="datePicker" class="grey-text text-darken-3">
+            <i class="material-icons left" onclick="datePicker(this)">
+              chevron_left
+            </i>
+            <span class="date-title">today</span>
+            <i class="material-icons right" onclick="datePicker(this)">
+              chevron_right
+            </i>
+          </div>
+          <div id="eventList">
+            <div class="event row z-depth-1 valign-wrapper">
+              <div class="col s5 valign-wrapper">
+                <img
+                  src="./src/img/events/event1.jpg"
+                  alt="e1"
+                  class="responsive-img z-depth-1"
+                />
+              </div>
+              <div class="col s7">
+                <span>Time: 10:43:02</span><br />
+                <span>Christina (81% sure)</span>
+                <br /><span>Event: Exit</span>
+              </div>
+            </div>
+            <div class="event row z-depth-1 valign-wrapper">
+              <div class="col s5 valign-wrapper">
+                <img
+                  src="./src/img/events/event2.jpg"
+                  alt="e1"
+                  class="responsive-img z-depth-1"
+                />
+              </div>
+              <div class="col s7">
+                <span>Time: 15:55:04</span><br />
+                <span>Marina (94% sure)</span>
+                <div class="switch">
+                  <label
+                    >Flag wrong decision
+                    <input type="checkbox" id="flag1" class="flagSwitch" />
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="event row z-depth-1 valign-wrapper">
+              <div class="col s5 valign-wrapper">
+                <img
+                  src="./src/img/events/event3.jpg"
+                  alt="e1"
+                  class="responsive-img z-depth-1"
+                />
+              </div>
+              <div class="col s7">
+                <span>Time: 16:03:35</span><br />
+                <span>Marina (75% sure)</span>
+                <div class="switch">
+                  <label
+                    >Flag wrong decision
+                    <input type="checkbox" id="flag1" class="flagSwitch" />
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact" class="carousel-item">
+          <div id="contactList">
+            <div class="contact row z-depth-1 valign-wrapper">
+              <div class="col s5">
+                <img
+                  src="./src/img/contact/adele-angel.jpg"
+                  alt="Adele Angel"
+                  class="circle responsive-img z-depth-1"
+                />
+              </div>
+              <div class="col s7">
+                <h6 class="teal-text text-darken-4">Adele Angel</h6>
+                <span class="teal-text text-darken-3">Full Stack Engineer</span>
+                <div class="person-info">
+                  Graphic design, UI/UX, Front-End, Back-End
+                </div>
+                <div class="row">
+                  <a
+                    href="mailto:adele.angel.dev@gmail.com"
+                    class="waves-effect waves-light btn-small"
+                    ><i class="material-icons left"> email </i>contact</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact row z-depth-1 valign-wrapper">
+              <div class="col s5">
+                <img
+                  src="./src/img/contact/gregory-gleibman.jpg"
+                  alt="Gregory Gleibman"
+                  class="circle responsive-img z-depth-1"
+                />
+              </div>
+              <div class="col s7">
+                <h6 class="teal-text text-darken-4">Gregory Gleibman</h6>
+                <span class="teal-text text-darken-3">Software Engineer</span>
+                <div class="person-info">
+                  AI, Machine Learning, Arduino, Back-End
+                </div>
+                <div class="row">
+                  <a
+                    href="mailto:catdoor.io@gmail.com"
+                    class="waves-effect waves-light btn-small"
+                    ><i class="material-icons left"> email </i>contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+    <script src="./src/js/config/firebase.js"></script>
+    <!-- database -->
+    <script src="./src/js/db.js"></script>
+    <!-- interface -->
+    <script src="./src/js/ui.js"></script>
+    <!-- service worker registration -->
+    <script src="./src/js/app.js"></script>
+    <!-- middleware -->
+    <script src="./src/js/middleware/platform-detect.js"></script>
+    <script src="./src/js/middleware/render-desktop.js"></script>
+    <script src="./src/js/middleware/render-mobile-tablet.js"></script>
+    <script src="./src/js/middleware/resize-view.js"></script>
+  </body>
+</html>
