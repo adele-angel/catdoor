@@ -14,9 +14,13 @@ https://catdoor-8278b.web.app/
 3. Arduino opens the door.
 4. Cat is happy.
 
-**Copyrights for application's logo & icons**
-©2019 Adele Angel, All Rights Reserved.
+**Copyrights for application's logo & icons art**
+
 Graphic design, UI/UX, Front-End by Adele Angel
+
+©2019 Adele Angel, All Rights Reserved.
+
+
 
 # Learning Objectives
 - HTML5 + CSS3 + JavaScript
