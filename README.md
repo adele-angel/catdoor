@@ -28,3 +28,4 @@ Graphic design, UI/UX, Front-End by Adele Angel
 - HTML5 + CSS3 + JavaScript
 - Progressive Web Apps
 - Firebase (database, storage & deployment)
+- Machine learning: deep neural networks
