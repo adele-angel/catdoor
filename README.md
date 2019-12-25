@@ -3,6 +3,10 @@
 **Automatic. Connected. AI cat door. Open source. Coming soon!**
 catDoor is a smart flap door for your cats, powered by Artificial Intelligence. It uses computer vision to let your cats enter the house, while keeping out stray cats and wildlife.
 
+**Currently only works on mobile mode or as mobile application
+Open in mobile browser: https://catdoor-8278b.web.app/ 
+then allow catDoor install the app on your phone. If it doesn't start automatically go to browser's settings -> add to home screen**
+
 ## View online demo
 - Web & mobile application (compatible with Android, iOs & Windows):
 https://catdoor-8278b.web.app/
