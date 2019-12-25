@@ -7,9 +7,9 @@ catDoor is a smart flap door for your cats, powered by Artificial Intelligence. 
 Open in mobile browser: https://catdoor-8278b.web.app/ 
 then allow catDoor install the app on your phone. If it doesn't start automatically go to browser's settings -> add to home screen**
 
+:warning: :construction: work in progress
 ```
 A collabaration for machine learning project using neural networks
-:warning: :construction: work in progress
 ```
 
 ## View online demo
