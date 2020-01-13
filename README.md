@@ -18,9 +18,9 @@ A collabaration with [@Grish1](https://github.com/Grish1) for machine learning p
 
 
 ## View online demo
-- Web & mobile application (compatible with Android, iOs & Windows):
+- Web and mobile application (compatible with Android, iOS & Windows):
 https://catdoor-8278b.web.app/
-- For additional info & video: http://catdoor.io/
+- For additional info and videos: http://catdoor.io/
 
 ## How does it work?
 1. Camera takes picture of a cat.
