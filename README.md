@@ -1,4 +1,5 @@
 <img src="https://firebasestorage.googleapis.com/v0/b/catdoor-8278b.appspot.com/o/icon-96x96.png?alt=media&token=f64e5604-c94f-4d0f-80aa-effc70458c09" alt="catDoor" style="width:150px;height:150px;" align="right"/>
+
 # catDoor
 
 **Automatic. Connected. AI cat door. Open source. Coming soon!**
