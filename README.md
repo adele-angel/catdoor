@@ -1,15 +1,17 @@
 ![catDoor](https://firebasestorage.googleapis.com/v0/b/catdoor-8278b.appspot.com/o/icon-96x96.png?alt=media&token=f64e5604-c94f-4d0f-80aa-effc70458c09) 
 # catDoor
+
 **Automatic. Connected. AI cat door. Open source. Coming soon!**
+
 catDoor is a smart flap door for your cats, powered by Artificial Intelligence. It uses computer vision to let your cats enter the house, while keeping out stray cats and wildlife.
 
 :warning: :construction: work in progress
 
-**Currently only works on mobile mode or as mobile application
+**Currently only works on mobile mode or as mobile application**
 
-Open in mobile browser: https://catdoor-8278b.web.app/ 
-
-then allow catDoor install the app on your phone. If it doesn't start automatically go to browser's settings -> add to home screen**
+1. Open in mobile browser: https://catdoor-8278b.web.app/ 
+2. allow catDoor install the app on your phone.
+3. If the app doesn't install automatically go to browser's settings and choose 'add to home screen'
 
 ```
 A collabaration for machine learning project using neural networks
@@ -29,8 +31,6 @@ https://catdoor-8278b.web.app/
 ### Copyrights
 Graphic design, UI/UX, Front-End by Adele Angel
 ©2019 Adele Angel, All Rights Reserved.
-
-
 
 # Learning Objectives
 - HTML5 + CSS3 + JavaScript
